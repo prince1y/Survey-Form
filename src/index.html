@@ -1,0 +1,50 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<h1 id="title">Syntixi Survey Form</h1>
+<p id="description">Thank you for taking the time to help us improve our services</p>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label><br>
+  <input type="text" id="name" placeholder="Enter your name" required>
+  <br>
+  <label id="email-label" for="email">Email</label>
+  <br>
+  <input type="email" id="email" placeholder="Enter your email" required>
+  <br>
+  <label id="number-label" for="number">Age (optional)</label><br>
+  <input type="number" id="number" placeholder="Age" min="10" max="99">
+  <br>
+  <label for="dropdown">Which option best describes your current role?</label>
+  <br>
+  <select id="dropdown" name="roles">
+    <option selected>Select current role</option>
+    <option value="student">Student</option>
+    <option value="fTime-job">Full Time Job</option>
+    <option value="fTime-learner">Full Time Learner</option>
+    <option value="not-say">Prefer Not To Say</option>
+    <option value="others">Others</option>
+  </select><br>
+  <p>Would you recommend Syntixi to a friend?</p>
+  <input type="radio" id="definitely" name="recommend" value="definitely">
+  <label for="definitely">Definitely</label><br>
+   <input type="radio" id="maybe" name="recommend" value="maybe">
+  <label for="maybe">Maybe</label><br>
+   <input type="radio" id="not-sure" name="recommend" value="not-sure">
+  <label for="not-sure">Not sure</label>
+  <p>What would you like us to improve on? (check all that applies)</p>
+  <input type="checkbox" id="front" name="improve" value="front">
+  <label for="front">Front-end Projects</label><br>
+  <input type="checkbox" id="back" name="improve" value="back">
+  <label for="back">Back-end Projects</label><br>
+  <input type="checkbox" id="devops" name="improve" value="devops">
+  <label for="devops">DevOps Projects</label><br>
+  <input type="checkbox" id="front" name="improve" value="front">
+  <label for="front">Front-end Projects</label><br>
+  <input type="checkbox" id="care" name="improve" value="care">
+  <label for="care">Customer Care</label><br>
+  <input type="checkbox" id="data" name="improve" value="data">
+  <label for="data">Data Visualization</label><br>
+  <p>Any comments or suggestions?</p>
+  <textarea rows="4" cols="50" placeholder="Enter your comment here..."></textarea><br>
+  <button type="submit" id="submit">Submit</button>
+</form>
+
